@@ -1,3 +1,50 @@
+{% load static %}
 
-
-<h1>Stellar navbar</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="{% static './img/logo.jpg' %}" alt="" class="img-fluid logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav-fill w-100">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <span class="btn dropdown-toggle drop-btn" type="button" id="dropdownone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PRODUCTS
+            </span>
+            <div class="dropdown-menu" aria-labelledby="dropdownone">
+              <a class="dropdown-item" href="products.html">Product 1</a>
+              <a class="dropdown-item" href="products.html">Product 2</a>
+            </div>
+          </div>
+          </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <span class="btn dropdown-toggle drop-btn" type="button" id="dropdowntwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SERVICES
+            </span>
+            <div class="dropdown-menu" aria-labelledby="dropdowntwo">
+              <a class="dropdown-item" href="#">Service 1</a>
+              <a class="dropdown-item" href="#">Service 2</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reviews</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT US</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>

@@ -3,8 +3,33 @@
 
 {% block content %}
 
-<h2>  project</h2>
-<p>lorem ipsum dolor sit amet, consectetur adip</p>
-
+<div class="container">
+    <div class="row">
+        {% for product in products %}
+        <div class="col-4">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 p-4 wow fadeInUp">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-11 product-grid">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <img src="{{product.image.url}}" alt="" class="img-fluid">
+                                    </div>
+                                </div>    
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="product-title">
+                                            {{product.product_name}}
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+</div>
 
 {% endblock content %}
