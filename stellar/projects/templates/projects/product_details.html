@@ -1,0 +1,148 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+{% for proddetail in proddetails %}
+
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-12 col-md-5 col-lg-5 d-flex justify-content-center align-items-center prod-desc-img wow fadeInLeft">
+            <img src="{{ proddetail.image.url }}" alt="" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-7 col-lg-7">
+            <p class="product-head wow fadeInUp">
+                {{ proddetail.product_name }}
+            </p>
+                <p class="highlights-text wow fadeInUp">HIGHLIGHTS:</p>
+                <ul class="prod-desc-li wow fadeInUp">
+                    <li>The classic Cross silhouette with 23k gold trims is favoured by world
+                        leaders
+                    </li>
+                    <li>Subtle, incised line-pattern</li>
+                    <li>Chrome-plated appointments</li>
+                    <li>Specially formulated ink that flows flawlessly</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col-12">
+                
+            <div id="accordion">
+                <div class="card">
+                <div class="card-header" id="headingOne">
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-4 bord">
+                            <p class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                DESCRIPTION
+                            </p>
+                        </div>
+                        <div class="col-4 bord">
+                            
+                        </div>
+                        <div class="col-4 bord">
+                            <p class="text-right">
+                                <i class="fas fa-chevron-down"></i>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-4 bord">
+                            <p class="btn" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapseOne">
+                                TECHNICAL SPECIFICATION
+                            </p>
+                        </div>
+                        <div class="col-4 bord">
+                            
+                        </div>
+                        <div class="col-4 bord">
+                            <p class="text-right">
+                                <i class="fas fa-chevron-down"></i>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapsetwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                <div class="card-header" id="headingThree">
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-4 bord">
+                            <p class="btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                ADDITIONAL INFORMATION
+                            </p>
+                        </div>
+                        <div class="col-4 bord">
+                            
+                        </div>
+                        <div class="col-4 bord">
+                            <p class="text-right">
+                                <i class="fas fa-chevron-down"></i>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+                </div>
+            </div>
+    
+    
+    </div>
+    </div>
+    </div>
+
+    
+<div class="container">
+    <div class="row">
+        <div class="col-12 wow fadeInUp">
+            <p class="main-head text-center">OTHER CUSTOMERS RECENTLY PURCHASED</p>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-around mt-5 mb-5 wow fadeInUp">
+
+        <div class="col-10 col-md-2 col-lg-2 d-flex justify-content-center prod-sugg-grid">
+            <img class="img-fluid" src="./img/wallet.jpg" alt="">
+        </div>
+        <div class="col-10 col-md-2 col-lg-2 d-flex justify-content-center prod-sugg-grid">
+            <img class="img-fluid" src="./img/wallet.jpg" alt="">
+        </div>
+        <div class="col-10 col-md-2 col-lg-2 d-flex justify-content-center prod-sugg-grid">
+            <img class="img-fluid" src="./img/wallet.jpg" alt="">
+        </div>
+        <div class="col-10 col-md-2 col-lg-2 d-flex justify-content-center prod-sugg-grid">
+            <img class="img-fluid" src="./img/wallet.jpg" alt="">
+        </div>
+        <div class="col-10 col-md-2 col-lg-2 d-flex justify-content-center prod-sugg-grid">
+            <img class="img-fluid" src="./img/wallet.jpg" alt="">
+        </div>
+
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock content %}

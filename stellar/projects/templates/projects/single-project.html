@@ -1,1 +1,35 @@
-<h2> single project</h2>
+{% extends 'main.html' %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        {% for product_detail in product_details %}
+        <div class="col-4">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 p-4 wow fadeInUp">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-11 product-grid">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <img src="{{product_detail.image.url}}" alt="" class="img-fluid">
+                                    </div>
+                                </div>    
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="product-title">
+                                            {{product_detail.product_name}}
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}
