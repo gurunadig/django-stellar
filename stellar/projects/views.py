@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from . import views
-from .models import Product 
+from .models import Product, Slider 
 
 
 def projects(request):
@@ -15,3 +15,16 @@ def product_details(request, pk):
     context = {'proddetails': proddetails}
     return render(request, 'projects/product_details.html', context)
 
+
+def home(request):
+    sliders = Slider.objects.all()
+    context = {'sliders':sliders}
+    return render(request, 'projects/home.html', context)
+
+
+def about(request):
+    return render(request, 'projects/about.html')
+
+
+def contact(request):
+    return render(request, 'projects/contact.html')
