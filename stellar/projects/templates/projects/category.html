@@ -2,7 +2,6 @@
 
 {% block content %}
     <div class="row">
-
         <div class="col-3 mt-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-10">
@@ -26,8 +25,7 @@
             </div>
         
         </div>
-
-        <div class="col-8 mt-4">
+        <div class="col-8 mt-3">
             <div class="row">
                 {% for product in products %}
                 <div class="col-4">
@@ -36,8 +34,8 @@
                             <div class="row d-flex justify-content-center">
                                 <div class="col-11 product-grid">
                                     <div class="row">
-                                        <div class="col-12 d-flex justify-content-center"> 
-                                        <a href="{% url 'product_details' product.id %}"> 
+                                        <div class="col-12 d-flex justify-content-center">
+                                        <a href="{% url 'product_details' product.id %}">
 
                                             <img src="{{ product.image.url }}" alt="" class="img-fluid">
                                             </a>

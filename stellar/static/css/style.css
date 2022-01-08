@@ -43,6 +43,8 @@ body{
     background-color: #fffbfb;
 }
 
+
+
 /* service section styling ________________________ */
 .main-headin{
     text-align: center;
@@ -414,6 +416,10 @@ a {
 
 }
 
+
+.fullwidth{
+    width: 100% !important;
+}
 /* product desc page style goes here ______________________________________________*/
 
 
