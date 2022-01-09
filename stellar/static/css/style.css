@@ -372,8 +372,10 @@ a {
 }
 
 .product-head{
-    font-size: 2vw;
+    font-size: 2rem;
     margin-left: 20px;
+    text-transform: capitalize;
+    
 }
 
 .highlights-text{
@@ -652,7 +654,8 @@ a {
    
 
     .product-head{
-        font-size: 5vw;
+        font-size: 4vw;
+
         padding: 10px;
     }
     .highlights-text{
