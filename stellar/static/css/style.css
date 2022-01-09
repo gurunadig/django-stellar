@@ -471,8 +471,20 @@ a {
     color: #000 !important;
 }
 
+.prodname{
+    border-top: 1px solid #ccc;
+    padding-top:5px;
+    margin-top: 10px;
+    text-align: center !important;
+    font-size: 1.2rem;
+    text-transform:capitalize;
+    font-weight: 600;
+}
 
-
+.prodimgheight{
+    max-height: 300px;
+    min-height: 300px;
+}
 
 /* Responsive code starts here ________________________________________________ */
 @media only screen and (max-width: 480px) {
@@ -608,6 +620,7 @@ a {
         font-size: 4vw;
         padding-left: 10px;
         padding-right: 10px;
+
     }
     
     .product-brand-small{
@@ -633,7 +646,11 @@ a {
     .product-title{
         text-decoration: none;
         color: #000 !important;
+
     }
+
+   
+
     .product-head{
         font-size: 5vw;
         padding: 10px;

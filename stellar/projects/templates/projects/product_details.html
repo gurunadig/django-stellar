@@ -14,15 +14,13 @@
             <p class="product-head wow fadeInUp">
                 {{ proddetail.product_name }}
             </p>
-                <p class="highlights-text wow fadeInUp">HIGHLIGHTS:</p>
+                <!-- <p class="highlights-text wow fadeInUp">HIGHLIGHTS:</p> -->
                 <ul class="prod-desc-li wow fadeInUp">
-                    <li>The classic Cross silhouette with 23k gold trims is favoured by world
-                        leaders
-                    </li>
-                    <li>Subtle, incised line-pattern</li>
-                    <li>Chrome-plated appointments</li>
-                    <li>Specially formulated ink that flows flawlessly</li>
+                    {{ proddetail.product_description }}
                 </ul>
+                <p class="product-head wow fadeInUp">
+                    Price = {{ proddetail.price }}
+                </p>
             </div>
         </div>
     </div>
@@ -54,7 +52,7 @@
             
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        {{ proddetail.product_description }}
                     </div>
                 </div>
                 </div>
@@ -79,8 +77,8 @@
                 </div>
                 <div id="collapsetwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
+                        {{ proddetail.product_technical_specs }}
+                </div>
                 </div>
                 </div>
                 <div class="card">
@@ -123,23 +121,9 @@
         </div>
     </div>
     <div class="row d-flex justify-content-around mt-5 mb-5 wow fadeInUp">
-
         <div class="col-10 col-md-2 col-lg-2 d-flex justify-content-center prod-sugg-grid">
-            <img class="img-fluid" src="./img/wallet.jpg" alt="">
+            <img class="img-fluid" src="{{ proddetail.image.url }}" alt="">
         </div>
-        <div class="col-10 col-md-2 col-lg-2 d-flex justify-content-center prod-sugg-grid">
-            <img class="img-fluid" src="./img/wallet.jpg" alt="">
-        </div>
-        <div class="col-10 col-md-2 col-lg-2 d-flex justify-content-center prod-sugg-grid">
-            <img class="img-fluid" src="./img/wallet.jpg" alt="">
-        </div>
-        <div class="col-10 col-md-2 col-lg-2 d-flex justify-content-center prod-sugg-grid">
-            <img class="img-fluid" src="./img/wallet.jpg" alt="">
-        </div>
-        <div class="col-10 col-md-2 col-lg-2 d-flex justify-content-center prod-sugg-grid">
-            <img class="img-fluid" src="./img/wallet.jpg" alt="">
-        </div>
-
     </div>
 </div>
 

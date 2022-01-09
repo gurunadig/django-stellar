@@ -27,7 +27,7 @@
         
         </div>
 
-        <div class="col-8 mt-4">
+        <div class="col-8 mt-4 mb-5">
             <div class="row">
                 <div class="col-12">
                     <h2>Filter By</h2>
@@ -52,14 +52,13 @@
                                     <div class="row">
                                         <div class="col-12 d-flex justify-content-center"> 
                                         <a href="{% url 'product_details' product.id %}"> 
-
-                                            <img src="{{ product.image.url }}" alt="" class="img-fluid">
+                                            <img src="{{ product.image.url }}" alt="" class="img-fluid prodimgheight">
                                             </a>
                                         </div>
                                     </div>    
                                     <div class="row">
                                         <div class="col-12">
-                                            <p class="product-title">
+                                            <p class="prodname">
                                                 {{product.product_name}}
                                             </p>
                                         </div>
