@@ -29,11 +29,15 @@
             <div class="row">
                 <div class="col-12">
                     <h2>Filter By</h2>
-                    {% for product in products %}
+                    <!-- {% for product in products %}
                         <button type="button" class="btn btn btn-outline-warning btn-sm">
                             {{ product.product_category }}
                         </button>
-                    {% endfor %}
+                    {% endfor %} -->
+                    <form action="">
+                        {{ myFilter.form}}
+                        <button class="btn btn-primary" type="submit">Filter</button>
+                    </form>
                 </div>
             </div>
             <div class="row">

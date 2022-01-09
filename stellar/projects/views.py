@@ -3,11 +3,15 @@ from django.http import HttpResponse
 from . import views
 from .models import Product, Category 
 from django.contrib import messages
+from .filters import ProductFilter
+
 
 def projects(request):
     products = Product.objects.all()
     categorys = Category.objects.all()
-    context = {'products':products, 'categorys':categorys}
+    myFilter = ProductFilter(request.GET, queryset=products)
+    products = myFilter.qs
+    context = {'products':products, 'categorys':categorys, 'myFilter':myFilter}
     return render(request, 'projects/projects.html', context)
 
 
@@ -32,10 +36,13 @@ def contact(request):
 
 def category(request, pk):
     categorys = Category.objects.all()
+
     if(Category.objects.filter(id=pk)):
         products = Product.objects.filter(category__id=pk)
         category_details = Category.objects.filter(id=pk)
-        context = {'products': products, 'category_details':category_details, 'categorys':categorys}
+        myFilter = ProductFilter(request.GET, queryset=products)
+        products = myFilter.qs
+        context = {'products': products, 'category_details':category_details, 'categorys':categorys, 'myFilter':myFilter}
         return render(request, 'projects/category.html', context)  
     else:
         messages.warning(request, "No Such Category Found !")
