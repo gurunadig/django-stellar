@@ -4,8 +4,14 @@ body{
 }
 
 .logo-img{
-    max-height: 80px;
+    max-height: 100px;
 }
+
+.navbar{
+    background: #2e302e !important;
+    color: #ffffff;
+}
+
 
 .nav-item {
     margin-left: 10px;
@@ -14,7 +20,7 @@ body{
 
 
 .nav-link{
-    color: #000 !important;
+    color: rgb(255, 255, 255) !important;
     font-weight: 600;
 }
 
@@ -44,6 +50,18 @@ body{
 }
 
 
+.brouchdiv{
+    height:150px;
+    background-color: #2e302e;
+    color: #d4b035;
+    font-size: 2rem;
+}
+
+
+.btn-dwn{
+    color: #ffffff;
+    background-color: #d88e14;
+}
 
 /* service section styling ________________________ */
 .main-headin{
@@ -67,6 +85,23 @@ body{
     background-color: #e5e3e3;
     height: 400px;
     max-height: auto;
+    box-shadow:
+  0px 0px 2.8px rgba(0, 0, 0, 0.035),
+  0px 0px 22px rgba(0, 0, 0, 0.07)
+;
+
+ 
+}
+
+.services-grid:hover{
+       box-shadow:
+        3.4px 3.4px 10.4px rgba(0, 0, 0, 0.081),
+        8.7px 8.7px 26.3px rgba(0, 0, 0, 0.115),
+        17.7px 17.7px 53.7px rgba(0, 0, 0, 0.145),
+        36.5px 36.5px 110.6px rgba(0, 0, 0, 0.179),
+        100px 100px 303px rgba(0, 0, 0, 0.26)
+        ;
+        
 }
 
 .grid-text{
@@ -91,12 +126,27 @@ body{
 }
 
 
+.prod-links{
+    color:#ffffff;
+}
+
+.list-group-item{
+    background-color: #d5b036 !important;
+    height: 60px;
+}
+
+.list-group-item a {
+    font-weight: 700;
+    color: #ffffff !important;
+}
+
 /* service section styling ________________________ */
 
 
 /* service section styling ________________________ */
 .btn-letstalk{
-    background-color: #d4b035;
+    background-color: #d88e14;
+    color:#ffffff;
     border-radius: 0px !important;
     width: 10vw;
     margin-top: 20px;
@@ -131,7 +181,7 @@ body{
     border-left: 0px !important;
     border-right: 0px !important;
     border-radius: 0px !important;
-    border-bottom-color: 2px solid #d4b035 !important;
+    border-bottom-color: 2px solid #d88e14 !important;
     
 }
 
@@ -139,7 +189,7 @@ body{
 
 
 .btnsubmit{
-    background-color: #d4b035;
+    background-color: #d88e14;
     border-radius: 0px !important;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -160,7 +210,7 @@ body{
 
 .foot-sect{
     border-top: 10px solid #d4b035;
-    background-color: #000000;
+    background-color: #2e302e;
     color: #fff;
 }
 
@@ -216,6 +266,11 @@ body{
     text-align: center;
 }
 
+.solution-head-left{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
 .btn-catalog{
     background-color: #d4b34c;
     height: 80px;
@@ -258,8 +313,13 @@ body{
 
 
 /* product page style goes here ______________________________________________*/
+
+.project-bg{
+    background-color: #f7f2f2;
+}
 .product-grid{
     height: auto;
+    background-color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
 }
 .product-grid:hover{
@@ -474,7 +534,8 @@ a {
 }
 
 .prodname{
-    border-top: 1px solid #ccc;
+    color: #2e302e;
+    border-top: 1px solid #d88e14;
     padding-top:5px;
     margin-top: 10px;
     text-align: center !important;
@@ -520,7 +581,8 @@ a {
         text-align: center;
     }
     .btn-letstalk{
-        background-color: #d4b035;
+        background-color: #d88e14;
+        color:#ffffff;
         border-radius: 0px !important;
         width: 50vw;
         height: 20vw;

@@ -25,6 +25,25 @@
 
 <div class="light-bg">
 
+
+  <div class="container">
+    <div class="row mt-5 brouchdiv d-flex align-items-center">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-8">
+            <p class="broucher-title text-center">CORPORATE GIFT CATALOG</p>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-lg btn-dwn">Download Now</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="container">
     <div class="row wow fadeInUp">
       <div class="col-12 col-md-12 col-lg-12 mt-5">
@@ -38,7 +57,7 @@
             <div class="row d-flex justify-content-center">
               <div class="col-10 col-md-10 col-lg-10 services-grid">
                 <div class="row d-flex justify-content-center">
-                  <img src="./img/briefcase.png" class="img-fluid serv-grid-img" alt="">
+                  <img src="{% static '/img/briefcase.png' %}" class="img-fluid serv-grid-img" alt="">
                 </div>
                 
                 <p class="grid-text">Got an event around the
@@ -55,7 +74,7 @@
               <div class="row d-flex justify-content-center">
                 <div class="col-10 col-md-10 col-lg-10 services-grid">
                   <div class="row d-flex justify-content-center">
-                    <img src="./img/giftcolor.png" class="img-fluid serv-grid-img" alt="">
+                    <img src="{% static '/img/giftcolor.png'%}" class="img-fluid serv-grid-img" alt="">
                   </div>
                   
                   <p class="grid-text">Remote onboarding of
@@ -72,7 +91,7 @@
                 <div class="row d-flex justify-content-center">
                   <div class="col-10 col-md-10 col-lg-10 services-grid">
                     <div class="row d-flex justify-content-center">
-                      <img src="./img/office.png" class="img-fluid serv-grid-img" alt="">
+                      <img src="{% static './img/office.png' %}" class="img-fluid serv-grid-img" alt="">
                     </div>
                     
                     <p class="grid-text">What if you could have a
@@ -90,7 +109,7 @@
                 <div class="row d-flex justify-content-center">
                   <div class="col-10 col-md-10 col-lg-10 services-grid">
                     <div class="row d-flex justify-content-center">
-                      <img src="./img/letter.png" class="img-fluid serv-grid-img" alt="">
+                      <img src="{% static './img/letter.png' %}" class="img-fluid serv-grid-img" alt="">
                     </div>
                     
                     <p class="grid-text">Looking to Reward your
@@ -133,35 +152,39 @@
                   
                   <div class="col-12 col-md-2 col-lg-2 promo-grid">
                     <div class="row d-flex justify-content-center">
-                      <img src="./img/coffee.png" alt="" class="img-fluid categor-img">
+                      <img src="{% static './img/coffee.png' %}" alt="" class="img-fluid categor-img">
                     </div>
                     <p class="categor-text">MUGS &
                       DRINKWARE</p>
-                    </div>
+                    </div> 
                     <div class="col-12 col-md-2 col-lg-2 promo-grid">
                       <div class="row d-flex justify-content-center">
-                        <img src="./img/thisrt.png" alt="" class="img-fluid categor-img">
+                       
+                        <img src="{% static '/img/thisrt.png' %}" alt="" class="img-fluid categor-img">
                       </div>
                       <p class="categor-text">CLOTHING
                         & TEXTILES</p>
                       </div>
                       <div class="col-12 col-md-2 col-lg-2 promo-grid">
                         <div class="row d-flex justify-content-center">
-                          <img src="./img/pen.png" alt="" class="img-fluid categor-img">
+                      
+                          <img src="{% static '/img/pen.png' %}" alt="" class="img-fluid categor-img">
                         </div>
                         <p class="categor-text">PENS & WRITING
                           INSTRUMENTS</p>
                         </div>
                         <div class="col-12 col-md-2 col-lg-2 promo-grid">
                           <div class="row d-flex justify-content-center">
-                            <img src="./img/recycle.png" alt="" class="img-fluid categor-img">
+                     
+                            <img src="{% static '/img/recycle.png' %}" alt="" class="img-fluid categor-img">
                           </div>
                           <p class="categor-text">RECYCLED & ECO
                             PRODUCTS</p>
                           </div>
                           <div class="col-12 col-md-2 col-lg-2 promo-grid">
                             <div class="row d-flex justify-content-center">
-                              <img src="./img/note.png" alt="" class="img-fluid categor-img">
+                             
+                              <img src="{% static '/img/note.png' %}" alt="" class="img-fluid categor-img">
                             </div>
                             <p class="categor-text">NOTEBOOKS</p>
                           </div>
@@ -172,28 +195,32 @@
                         <div class="row d-flex justify-content-around">
                           <div class="col-12 col-md-2 col-lg-2 promo-grid">
                             <div class="row d-flex justify-content-center">
-                              <img src="./img/battery.png" alt="" class="img-fluid categor-img">
+                       
+                              <img src="{% static '/img/battery.png' %}" alt="" class="img-fluid categor-img">
                             </div>
                             <p class="categor-text">ELECTRONICS
                               & TECHNOLOGY</p>
                             </div>
                             <div class="col-12 col-md-2 col-lg-2 promo-grid">
                               <div class="row d-flex justify-content-center">
-                                <img src="./img/suitaces.png" alt="" class="img-fluid categor-img">
+                              
+                                <img src="{% static '/img/suitaces.png' %}" alt="" class="img-fluid categor-img">
                               </div>
                               <p class="categor-text">TRAVEL &
                                 LEISURE</p>
                               </div>
                               <div class="col-12 col-md-2 col-lg-2 promo-grid">
                                 <div class="row d-flex justify-content-center">
-                                  <img src="./img/phonecase.png" alt="" class="img-fluid categor-img">
+                               
+                                  <img src="{% static '/img/phonecase.png' %}" alt="" class="img-fluid categor-img">
                                 </div>
                                 <p class="categor-text">CALENDARS
                                   & DIARIES</p>
                                 </div>
                                 <div class="col-12 col-md-2 col-lg-2 promo-grid">
                                   <div class="row d-flex justify-content-center">
-                                    <img src="./img/suitaces.png" alt="" class="img-fluid categor-img">
+                                   
+                                    <img src="{% static '/img/suitaces.png' %}" alt="" class="img-fluid categor-img">
                                   </div>
                                   <p class="categor-text">TOOLS &
                                     TORCHES</p>
@@ -234,25 +261,52 @@
       <div class="mb-5 col-12 col-md-6 col-lg-6 mt-5">
         <div class="row d-flex justify-content-center justify-content-lg-around">
           <div class="col-4 col-md-3 col-lg-3">
-            <img src="./img/400-200.png" alt="" class="img-fluid">
+            <img src="{% static './img/client/client1.png' %}" alt="" class="img-fluid">
           </div>
           <div class="col-4 col-md-3 col-lg-3">
-            <img src="./img/400-200.png" alt="" class="img-fluid">
+            <img src="{% static './img/client/client2.png' %}" alt="" class="img-fluid">
           </div>
           <div class="col-4 col-md-3 col-lg-3">
-            <img src="./img/400-200.png" alt="" class="img-fluid">
+            <img src="{% static './img/client/client3.png' %}" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 col-md-3 col-lg-3">
+            <img src="{% static './img/client/client4.png' %}" alt="" class="img-fluid">
+          </div>
+          </div>
+
+          <div class="row mt-2 d-flex justify-content-center justify-content-lg-around">
+
+            
+            <div class="col-4 col-md-3 col-lg-3">
+              <img src="{% static './img/client/client5.png' %}" alt="" class="img-fluid">
+            </div>
+            <div class="col-4 col-md-3 col-lg-3">
+            <img src="{% static './img/client/client6.png' %}" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 col-md-3 col-lg-3">
+            <img src="{% static './img/client/client7.png' %}" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 col-md-3 col-lg-3">
+            <img src="{% static './img/client/client8.png' %}" alt="" class="img-fluid">
           </div>
         </div>
-        <div class="row d-flex justify-content-around mt-5">
+
+        <div class="row mt-2 d-flex justify-content-center justify-content-lg-around">
+
+          
           <div class="col-4 col-md-3 col-lg-3">
-            <img src="./img/400-200.png" alt="" class="img-fluid">
+            <img src="{% static './img/client/client9.png' %}" alt="" class="img-fluid">
           </div>
           <div class="col-4 col-md-3 col-lg-3">
-            <img src="./img/400-200.png" alt="" class="img-fluid">
+            <img src="{% static './img/client/client10.png' %}" alt="" class="img-fluid">
           </div>
           <div class="col-4 col-md-3 col-lg-3">
-            <img src="./img/400-200.png" alt="" class="img-fluid">
+            <img src="{% static './img/client/client11.png' %}" alt="" class="img-fluid">
           </div>
+          <div class="col-4 col-md-3 col-lg-3">
+            <img src="{% static './img/client/client12.png' %}" alt="" class="img-fluid">
+          </div>
+          
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-6">
