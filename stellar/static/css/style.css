@@ -32,15 +32,16 @@ body{
 }
 
 .banner-head{
-    font-size: 2vw;
+    font-size: 1.8rem;
     text-align: center;
+    font-weight: 600;
 }
 
 .banner-head-italic{
     text-align: center;
     font-size: 2vw;
     letter-spacing: 0.5vw;
-    color: #d88e14;
+    color: #d5b036;
     
 }
 
@@ -60,19 +61,21 @@ body{
 
 .btn-dwn{
     color: #ffffff;
-    background-color: #d88e14;
+    background-color: #d5b036;
 }
+
 
 /* service section styling ________________________ */
 .main-headin{
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.8rem;
     font-weight: 600;
-
+    
 }
 .main-sub-head{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .serv-grid-img{
@@ -87,10 +90,17 @@ body{
     max-height: auto;
     box-shadow:
   0px 0px 2.8px rgba(0, 0, 0, 0.035),
-  0px 0px 22px rgba(0, 0, 0, 0.07)
-;
+  0px 0px 22px rgba(0, 0, 0, 0.07);
 
- 
+}
+
+.services-gridclo{
+    background-color: #e5e3e3;
+    min-height: 400px;
+    box-shadow:
+  0px 0px 2.8px rgba(0, 0, 0, 0.035),
+  0px 0px 22px rgba(0, 0, 0, 0.07);
+
 }
 
 .services-grid:hover{
@@ -104,20 +114,48 @@ body{
         
 }
 
+.nodecor{
+    text-decoration:none !important; ;
+}
+
 .grid-text{
     margin-top: 20px;
     text-align: center;
     font-size: 1vw;
     padding: 10px;
     font-weight: 700;
+    color: #000;
 }
 
 .categor-text{
     text-align: center;
     margin-top: 10px;
     padding: 10px;
-    font-weight: 600;
+    font-weight: 700;
 }
+
+.categor-text::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .categor-text:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .categor-text::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #79cb9c;
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+
+
 
 .categ-sub-text{
     color: #d88e14;
@@ -145,7 +183,7 @@ body{
 
 /* service section styling ________________________ */
 .btn-letstalk{
-    background-color: #d88e14;
+    background-color: #d5b036;
     color:#ffffff;
     border-radius: 0px !important;
     width: 10vw;
@@ -153,7 +191,37 @@ body{
     margin-bottom: 50px;
 }
 
+.btn-letstalk a{
+    font-weight: 700;
 
+}
+
+.catalotitle{
+    font-weight:700;
+    text-align: center;
+}
+.pdficon{
+    font-size: 5rem;
+    color: #dd0b0c;
+}
+
+.catagrid{
+    border: 1px solid #d5b036;
+    padding: 15px;
+}
+
+.bg-gold{
+    background-color: #d4b035;
+}
+
+
+.pdfsize{
+    max-height:140px;
+}
+
+.line{
+    border-top: 1px solid #d5b036;
+}
 
 /* service section styling ________________________ */
 
@@ -174,9 +242,9 @@ body{
     background-color: #1c1b17;
 }
 
+
 .form-line{
     background-color: #1c1b17 !important;
-    color: #fff;
     border-top: 0px !important;
     border-left: 0px !important;
     border-right: 0px !important;
@@ -185,25 +253,46 @@ body{
     
 }
 
-/* service section styling ________________________ */
+.togold input::placeholder{
+    color:#d4b035;
+    font-size: 1.1rem;
+}
 
+.img-he{
+    max-height: 150px;
+    margin-bottom: 20px;
+}
+/* service section styling ________________________ */
+/* .bord{
+    border-top: 1px solid red;
+} */
+
+.adjus{
+    margin-top:10px
+}
+
+.forlabel label{
+    font-weight: 700;
+
+}
 
 .btnsubmit{
-    background-color: #d88e14;
+    background-color: #d4b035;
     border-radius: 0px !important;
     margin-top: 20px;
     margin-bottom: 50px;
     color: #fff;
+    font-weight: 600 !important;
 }
 
 .getin-text{
-    font-size: 2vw;
+    font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
 }
 
 .getin-sub-text{
-    font-size: 2vw;
+    font-size: 1.8rem;
     text-align: center;
 }
 
@@ -267,8 +356,13 @@ body{
 }
 
 .solution-head-left{
-    font-size: 2vw;
+    font-size: 1.8rem;
     font-weight: 700;
+}
+
+.sol-para{
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .btn-catalog{
@@ -309,7 +403,9 @@ body{
     font-size: 1.5vw;
 }
 
-
+.collas{
+    font-size: 1.5rem;
+}
 
 
 /* product page style goes here ______________________________________________*/
@@ -549,12 +645,27 @@ a {
     min-height: 300px;
 }
 
+
+.footicons{
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive code starts here ________________________________________________ */
 @media only screen and (max-width: 480px) {
 
     .main-headin{
         text-align: center;
-        font-size: 8vw;
+        font-size: 1.5rem;
         font-weight: 600;
     
     }

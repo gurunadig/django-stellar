@@ -48,3 +48,11 @@ def category(request, pk):
         messages.warning(request, "No Such Category Found !")
         return render('category')
 
+
+
+def services(request):
+    return render(request, 'projects/services.html')  
+
+
+def catalog(request):
+    return render(request, 'projects/catalog.html')  

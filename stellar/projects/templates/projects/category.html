@@ -1,7 +1,7 @@
 {% extends 'main.html' %}
-
+{%load crispy_forms_tags %} 
 {% block content %}
-    <div class="row">
+    <div class="row project-bg">
         <div class="col-3 mt-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-10">
@@ -28,15 +28,21 @@
         <div class="col-8 mt-3 mb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2>Filter By</h2>
-                    <!-- {% for product in products %}
-                        <button type="button" class="btn btn btn-outline-warning btn-sm">
-                            {{ product.product_category }}
-                        </button>
-                    {% endfor %} -->
+                    
+                    <h2 class="ml-3 mt-4">Filter By</h2>
+                </div>
+                <div class="col-12">
                     <form action="">
-                        {{ myFilter.form}}
-                        <button class="btn btnsubmit" type="submit">Filter</button>
+                        <div class="row">
+
+                            <div class="col-3 forlabel ml-3 bord">
+                                {{ myFilter.form | crispy }}
+                            </div>
+                            <div class="col-4  ml-3bord adjus">
+                                <button class="btn btnsubmit" type="submit">Filter</button>
+                            </div>
+                        </div>
+                      
                     </form>
                 </div>
             </div>

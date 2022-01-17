@@ -4,9 +4,12 @@
 
 
 {% for proddetail in proddetails %}
-
+<div class="project-bg">
+<br>
+<br>
+<br>
 <div class="container">
-    <div class="row mt-5 mb-5">
+    <div class="row mb-5">
         <div class="col-12 col-md-5 col-lg-5 d-flex justify-content-center align-items-center prod-desc-img wow fadeInLeft">
             <img src="{{ proddetail.image.url }}" alt="" class="img-fluid">
         </div>
@@ -34,7 +37,7 @@
                 <div class="card-header" id="headingOne">
                     <div class="row d-flex justify-content-around">
                         <div class="col-4 bord">
-                            <p class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <p class="collas btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 DESCRIPTION
                             </p>
                         </div>
@@ -60,7 +63,7 @@
                 <div class="card-header" id="headingTwo">
                     <div class="row d-flex justify-content-around">
                         <div class="col-4 bord">
-                            <p class="btn" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapseOne">
+                            <p class="btn collas" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapseOne">
                                 TECHNICAL SPECIFICATION
                             </p>
                         </div>
@@ -117,14 +120,19 @@
 <div class="container">
     <div class="row">
         <div class="col-12 wow fadeInUp">
-            <p class="main-head text-center">OTHER CUSTOMERS RECENTLY PURCHASED</p>
+            <p class="main-head text-center">OTHER CUSTOMERS RECENTLY VIEWED</p>
         </div>
     </div>
-    <div class="row d-flex justify-content-around mt-5 mb-5 wow fadeInUp">
+    <div class="row d-flex justify-content-around mt-5 wow fadeInUp">
         <div class="col-10 col-md-2 col-lg-2 d-flex justify-content-center prod-sugg-grid">
             <img class="img-fluid" src="{{ proddetail.image.url }}" alt="">
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
 </div>
 
 {% endfor %}
