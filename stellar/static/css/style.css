@@ -97,7 +97,7 @@ body{
 
 .services-gridclo{
     background-color: #e5e3e3;
-    min-height: 400px;
+    height:250px;
     box-shadow:
   0px 0px 2.8px rgba(0, 0, 0, 0.035),
   0px 0px 22px rgba(0, 0, 0, 0.07);
