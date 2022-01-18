@@ -64,7 +64,9 @@ body{
     background-color: #d5b036;
 }
 
-
+.categor-img{
+    border: 1px solid #d4b035;
+}
 /* service section styling ________________________ */
 .main-headin{
     text-align: center;
@@ -80,7 +82,6 @@ body{
 
 .serv-grid-img{
     max-height: 150px;
-    margin-top: 20px;
 
 }
 
