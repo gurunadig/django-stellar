@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'projects.apps.ProjectsConfig',
     'django_filters',
     'crispy_forms',
+    'ckeditor'
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

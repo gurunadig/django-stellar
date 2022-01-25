@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from . import views
-from .models import Product, Category 
+from .models import Product, Category, Catalog 
 from django.contrib import messages
 from .filters import ProductFilter
 
@@ -55,4 +55,6 @@ def services(request):
 
 
 def catalog(request):
-    return render(request, 'projects/catalog.html')  
+    catalogs = Catalog.objects.all()
+    context = {'catalogs':catalogs}
+    return render(request, 'projects/catalog.html', context)  

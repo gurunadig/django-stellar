@@ -67,6 +67,11 @@ body{
 .categor-img{
     border: 1px solid #d4b035;
 }
+
+.towhite{
+    color: #ffffff;
+}
+
 /* service section styling ________________________ */
 .main-headin{
     text-align: center;
