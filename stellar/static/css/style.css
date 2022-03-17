@@ -597,7 +597,8 @@ a {
 }
 
 .condiv{
-    height: 80vh;
+    min-height: 80vh;
+    height: auto;
 }
 
 .con-form-div input{
@@ -647,8 +648,9 @@ a {
 }
 
 .prodimgheight{
-    max-height: 300px;
-    min-height: 300px;
+    min-height: 250px;
+    height: auto;
+    max-height: 250px;
 }
 
 
