@@ -32,16 +32,16 @@
         <div class="col-12 col-md-8 col-lg-8 mt-4 mb-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="ml-3 mt-4 text-center">Filter By</h2>
+                    <h2 class="ml-3 mt-4 text-center text-md-left">Filter By</h2>
                 </div>
                 <div class="col-12">
                     <form action="">
-                        <div class="row d-flex justify-content-center">
+                        <div class="row">
 
                             <div class="col-10 col-md-3 col-lg-3 forlabel ml-3 bord">
                                 {{ myFilter.form | crispy }}
                             </div>
-                            <div class="col-10 col-md-4 col-lg-4  ml-3 bord adjus d-flex justify-content-end">
+                            <div class="col-10 col-md-4 col-lg-4  ml-3 bord adjus d-flex justify-content-end justify-content-md-start justify-content-lg-start">
                                 <button class="btn btnsubmit" type="submit">Filter</button> 
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                     </div>
-                    {% endfor %}
+                {% endfor %}
             </div>
         </div>
     </div>

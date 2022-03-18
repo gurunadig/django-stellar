@@ -2,12 +2,12 @@
 {%load crispy_forms_tags %} 
 {% block content %}
     <div class="row project-bg">
-        <div class="col-3 mt-5">
+        <div class="col-12 col-md-3 col-lg-3 mt-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-10">
                     <ul class="list-group">
                         <li class="list-group-item mb-2">
-                            <a class="nav-link active fullwidth"
+                            <a class="nav-link active fullwidth prod-links"
                           href="{% url 'projects' %}">
                           All Products
                           </a>
@@ -25,45 +25,45 @@
             </div>
         
         </div>
-        <div class="col-8 mt-3 mb-5">
+        <div class="col-12 col-md-8 col-lg-8 mt-4 mb-5">
+
             <div class="row">
                 <div class="col-12">
-                    
-                    <h2 class="ml-3 mt-4">Filter By</h2>
+                    <h2 class="ml-3 mt-4 text-center text-md-left">Filter By</h2>
                 </div>
                 <div class="col-12">
                     <form action="">
                         <div class="row">
 
-                            <div class="col-3 forlabel ml-3 bord">
+                            <div class="col-10 col-md-3 col-lg-3 forlabel ml-3 bord">
                                 {{ myFilter.form | crispy }}
                             </div>
-                            <div class="col-4  ml-3bord adjus">
-                                <button class="btn btnsubmit" type="submit">Filter</button>
+                            <div class="col-10 col-md-4 col-lg-4  ml-3 bord adjus d-flex justify-content-end justify-content-md-start justify-content-lg-start">
+                                <button class="btn btnsubmit" type="submit">Filter</button> 
                             </div>
                         </div>
                       
                     </form>
                 </div>
             </div>
+
             <div class="row">
                 {% for product in products %}
-                <div class="col-4">
+                <div class="col-6 col-md-4 col-lg-4">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12 p-4 wow fadeInUp">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-11 product-grid">
                                     <div class="row">
-                                        <div class="col-12 d-flex justify-content-center">
-                                        <a href="{% url 'product_details' product.id %}">
-
+                                        <div class="col-12 d-flex justify-content-center"> 
+                                        <a href="{% url 'product_details' product.id %}"> 
                                             <img src="{{ product.image.url }}" alt="" class="img-fluid prodimgheight">
                                             </a>
                                         </div>
                                     </div>    
                                     <div class="row">
                                         <div class="col-12">
-                                            <p class="product-title">
+                                            <p class="prodname">
                                                 {{product.product_name}}
                                             </p>
                                         </div>
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                {% endfor %}
+            {% endfor %}
         </div>
     </div>
     </div>
